@@ -9,7 +9,6 @@ require_once 'YKGLoader.php';
 class YKG extends Component
 {
 
-
 	private $_app;
 
 	public function __construct()
