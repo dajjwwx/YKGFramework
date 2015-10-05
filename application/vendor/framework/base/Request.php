@@ -1,49 +1,65 @@
 <?php
+/****
+ *@use \YKG\YKG::app()->request->getControllerId()
+ */
 namespace YKG\base;
 
 use \YKG\helpers\Util;
 
-class Request
+class Request extends Component
 {
-	private static $_params = [];
+	private  static $_params = [];
 
-	private static $defaultRouter = 'site/index';
-	private static $defaultModule = '';
-	private static $defaultController='default';
-	private static $defaultAction = 'index';
+	private  static $defaultRouter = 'site/index';
+	private  static $defaultModule = '';
+	private  static $defaultController='default';
+	private  static $defaultAction = 'index';
 
-	public static function run()
+	public function __construct()
 	{
-
 		self::getParams();
-
-		 self::setRouter();
-		
-
-		$data = self::$_params;
-
-		Util::dump($data);
+		// self::m['router'] = self::$_params;
 	}
 
-	public static function getAbsoluteUrl()
+	/**
+	 *	Get the AbsoluteUrl
+	 */
+	public  function getAbsoluteUrl()
 	{
 		return self::getHostName().self::getRequestUri();
 	}
 
-	public static function getHostName()
+	public  function getHostName()
 	{
 		return $_SERVER['HTTP_HOST'];
 	}
 
-	public static function getRequestUri()
+	public  function getRequestUri()
 	{
 		return $_SERVER['REQUEST_URI'];
 	}
 
-	public static function getQueryString()
+	public  static function getQueryString()
 	{
+		return strtolower($_SERVER['QUERY_STRING']);
+	}
 
-		return $_SERVER['QUERY_STRING'];
+	public  static function getModuleId()
+	{
+		return self::getParams()['module'];
+		// return self::$_params['module'];
+	}
+
+	public  static function getControllerId()
+	{
+		return self::getParams()['controller'];
+		// return self::$_params['controller'];
+	}
+
+	public static function getActionId()
+	{
+		return self::getParams()['action'];
+		// return self::$_params['action'];
 	}
 
 	/**
@@ -68,19 +84,11 @@ class Request
 		return self::$_params;
 	}
 
-	public static function getModuleId()
+	private static function setMCA($m,$c,$a)
 	{
-		return self::$_params['module'];
-	}
-
-	public static function getControllerId()
-	{
-		return self::$_params['controller'];
-	}
-
-	public static function getActionId()
-	{
-		return self::$_params['action'];
+		self::$_params['module'] = $m;
+		self::$_params['controller'] = $c;
+		self::$_params['action'] = $a;			
 	}
 
 
@@ -94,15 +102,11 @@ class Request
 			//site=>/site/index
 			if(class_exists('\\app\\controllers\\'.ucfirst($tmp[0].'Controller')))
 			{
-				self::$_params['module'] = '';
-				self::$_params['controller'] = $tmp[0];
-				self::$_params['action'] = self::$defaultAction;				
+				self::setMCA('', $tmp[0], self::$defaultAction);		
 			}
 			elseif(class_exists('\\app\modules\\'.$tmp[0].'\\'.ucfirst($tmp[0]).'Module'))
 			{
-				self::$_params['module'] = $tmp[0];
-				self::$_params['controller'] = self::$defaultController;
-				self::$_params['action'] = self::$defaultAction;					
+				self::setMCA($tmp[0], self::$defaultController, self::$defaultAction);		
 			}			
 		}
 		if(sizeof($tmp) == 2)
@@ -110,15 +114,11 @@ class Request
 			//site/index
 			if(class_exists('\\app\\controllers\\'.ucfirst($tmp[0].'Controller')))
 			{
-				self::$_params['module'] = '';
-				self::$_params['controller'] = $tmp[0];
-				self::$_params['action'] = $tmp[1];				
+				self::setMCA('', $tmp[0], $tmp[1]);	
 			}
 			elseif(class_exists('\\app\modules\\'.$tmp[0].'\\'.ucfirst($tmp[0]).'Module'))
 			{
-				self::$_params['module'] = $tmp[0];
-				self::$_params['controller'] = $tmp[1];
-				self::$_params['action'] = self::$defaultAction;					
+				self::setMCA($tmp[0], $tmp[1], self::$defaultAction);			
 			}
 			else
 			{
@@ -129,9 +129,7 @@ class Request
 		}
 		elseif(sizeof($tmp) == 3)
 		{
-			self::$_params['module'] = $tmp[0];
-			self::$_params['controller'] = $tmp[1];
-			self::$_params['action'] = $tmp[2];			
+			self::setMCA($tmp[0], $tmp[1], $tmp[2]);
 		}
 
 
@@ -141,7 +139,7 @@ class Request
 
 
 
-	// public static function getRouter()
+	// public  function getRouter()
 	// {
 	// 	$router = isset($_GET['r'])?$_GET['r']:'site/index';
 

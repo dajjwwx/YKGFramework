@@ -8,6 +8,8 @@ class YKGLoader
 	{
 		// self::pre($class);
 
+		$filename = $class;
+
 		$class = explode('\\', $class);
 
 		if($class[0] == 'app')

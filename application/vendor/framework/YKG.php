@@ -2,16 +2,20 @@
 namespace YKG;
 
 use \YKG\base\Request;
+use \YKG\base\Component;
 
 require_once 'YKGLoader.php';
 
-class YKG
+class YKG extends Component
 {
+
 
 	private $_app;
 
 	public function __construct()
 	{
+		parent::__construct();
+		
 		$this->autoload();
 	}
 
@@ -20,7 +24,7 @@ class YKG
 	public static function app()
 	{
 
-		Request::run();
+		// Request::run();
 
 		$controller = '\\app\\controllers\\'.ucfirst(Request::getControllerId()).'Controller';
 
@@ -31,6 +35,10 @@ class YKG
 
 			$controller->$action();
 		}
+
+
+
+		return new \YKG\YKG();
 		
 
 
