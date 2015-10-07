@@ -6,9 +6,16 @@ class Controller
 	private $_id;
 	private $_action_id;
 
-	private static $page_partial_content;
+	private static $page_partial_content = '';
+	private static $layout_partial_content = [];
 
-	public $layout;
+	public $layout = '//layouts/base';
+
+	private $layouts_list = [];
+
+	private static $content_tag = '<ykg:content></ykg:content>';
+
+	private $html;
 
 	public function __construct()
 	{
@@ -19,6 +26,51 @@ class Controller
 	{
 				
 	}
+
+
+
+	public static function replaceContent($buffer)
+	{
+ 		return (str_replace(self::$content_tag, self::$page_partial_content, $buffer));
+	}
+
+	public function beginContent($layout)
+	{
+		// print_r(explode('/', $layout));
+
+		$layout = $this->getLayoutPath($layout);
+
+		// echo $layout;
+
+		$this->layouts_list[] = $layout; 
+
+		ob_start();
+		require($layout);
+		self::$layout_partial_content[] =  ob_get_clean();
+
+	}
+
+	public function endContent()
+	{
+
+	}
+
+	public function getLayoutPath($layout)
+	{
+		$pos = strpos($layout, '/layout');
+
+		if($pos == 0)
+		{
+			$view = ROOT.'/application/views'.$layout.'.php';
+		}
+		elseif($pos ==1)
+		{
+			$view = ROOT.'/application/views'.substr($layout, 1).'.php';
+		}
+
+		return $view;
+	}
+
 
 	private function getPath($module, $viewPath)
 	{
@@ -36,34 +88,8 @@ class Controller
 
 	}
 
-	public static function replaceContent($buffer)
+	public function getViewPath($viewPath)
 	{
- 		return (str_replace('<code>Content</code>', self::$page_partial_content, $buffer));
-	}
-
-	public function beginContent($layout)
-	{
-		ob_start();
-		ob_implicit_flush(false);
-
-		require(ROOT.'/application/views/layouts/main.php');
-	}
-
-	public function endContent()
-	{
-		ob_get_flush();
-	}
-
-
-	public function render($viewPath,$params=[])
-	{
-
-
-
-		// \YKG\helpers\Util::dump($params);
-
-		extract($params);
-
 		$module = Request::getModuleId();
 		$controller = Request::getControllerId();
 		$action = Request::getActionId();
@@ -85,16 +111,52 @@ class Controller
 			$viewPath = $vp[1].'/'.$vp[2];
 			$file = $this->getPath($module, $viewPath);
 		}
+		return $file;
+	}
 
-		// require($file);
+	private function constructLayout()
+	{
+		$content = self::$layout_partial_content[0];
+
+		for($i = 1; $i < sizeof(self::$layout_partial_content);$i++)
+		{
+			$content = str_replace(self::$content_tag, self::$layout_partial_content[$i], $content);
+		}
+		return $content;
+	}
+
+	private function constructView($viewPath,$params=[])
+	{
+		$layout = $this->getLayoutPath($this->layout);
+		extract($params);
+		$view = $this->getViewPath($viewPath);
 
 		ob_start();
 		ob_implicit_flush(false);
-		require($file);
+		require($view);
 		self::$page_partial_content =  ob_get_clean();
 
+
+		// echo self::$page_partial_content;
+		ob_start();
+		// ob_start('\\YKG\\base\\Controller::replaceContent');
+		require($layout);
+		// self::$page_partial_content =  ob_get_clean();
+		$tt = ob_get_clean();
+
+		self::$page_partial_content = str_replace(self::$content_tag, self::$page_partial_content, $tt);
+	}
+
+
+	public function render($viewPath,$params=[])
+	{
+		$this->constructView($viewPath,$params);
+		$content = $this->constructLayout();
+
 		ob_start('\\YKG\\base\\Controller::replaceContent');
-		require $this->layout;
+
+		echo $content; //Merge view and layout
+
 		ob_get_flush();
 		
 

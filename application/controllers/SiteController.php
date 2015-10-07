@@ -5,7 +5,7 @@ use \YKG\base\Controller;
 
 class SiteController extends Controller
 {
-	public $layout = ROOT.'/application/views/layouts/main.php';
+	public $layout = '//layouts/main';
 
 	public function  actionIndex()
 	{

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style type="text/css">
-
-</style>
-</head>
-<body>
-	<h1>Hello YKGFramework!~~~~~~~~~~~~~~~~</h1>
-	<code>Content</code>
-</body>
-</html>
+<?php $this->beginContent('//layouts/test');?>
+<h1>//Layouts/main</h1>
+<ykg:content></ykg:content>
+<?php $this->endContent();?>
