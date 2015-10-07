@@ -7,7 +7,7 @@ define('ROOT', dirname(__FILE__));
 
 $_SERVER['HTTP_HOST'] = 'www.ykgframework.com';
 $_SERVER['REQUEST_URI'] = '/index.php?r=site/index&id=1';
-$_SERVER['QUERY_STRING'] = 'r=blog/index&id=1';
+$_SERVER['QUERY_STRING'] = 'r=site/db&id=1';
 
 $app = dirname(__FILE__).'/application/vendor/framework/YKG.php';
 

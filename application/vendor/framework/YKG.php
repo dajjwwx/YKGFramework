@@ -16,12 +16,14 @@ class YKG extends Component
 		parent::__construct();
 		
 		$this->autoload();
+
 	}
 
 	private function __clone(){}
 
 	public static function app()
 	{
+		self::registerModel();
 
 		// Request::run();
 
@@ -35,12 +37,20 @@ class YKG extends Component
 			$controller->$action();
 		}
 
-
-
 		return new \YKG\YKG();
-		
 
+	}
 
+	public static function registerModel()
+	{
+		\ActiveRecord\Config::initialize(function($cfg)
+		{
+		    $cfg->set_model_directory(ROOT.'/application/models');
+		    $cfg->set_connections(array(
+		    	'development' => 'mysql://root:blueidea@127.0.0.1/ykg',
+		    	// 'production' => 'mysql://root:blueidea@127.0.0.1/ykg'
+		    	));
+		});
 	}
 
 	public function autoload()
