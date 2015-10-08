@@ -128,7 +128,11 @@ class Controller
 	private function constructView($viewPath,$params=[])
 	{
 		$layout = $this->getLayoutPath($this->layout);
-		extract($params);
+		if(is_array($params))
+		{
+			extract($params);
+		}
+		
 		$view = $this->getViewPath($viewPath);
 
 		ob_start();
@@ -142,9 +146,9 @@ class Controller
 		// ob_start('\\YKG\\base\\Controller::replaceContent');
 		require($layout);
 		// self::$page_partial_content =  ob_get_clean();
-		$tt = ob_get_clean();
+		$layout_content = ob_get_clean();
 
-		self::$page_partial_content = str_replace(self::$content_tag, self::$page_partial_content, $tt);
+		self::$page_partial_content = str_replace(self::$content_tag, self::$page_partial_content, $layout_content);
 	}
 
 
@@ -159,10 +163,6 @@ class Controller
 
 		ob_get_flush();
 		
-
-
-
-
 	}
 }
 ?>
