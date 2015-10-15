@@ -23,10 +23,30 @@ class YKG extends Component
 
 	public static function app()
 	{
-		self::registerModel();
+		return new \YKG\YKG();
+	}
 
-		// Request::run();
+	public function run($params)
+	{
+		self::config($params);	//load configuration
 
+		self::registerModel();	//load ORM Liabaray
+
+		self::request();	
+
+		return $this;
+	}
+
+	private function config($params)
+	{
+
+		self::$m = \YKG\helpers\HArray::multiMerge(\YKG\base\Config::load(), $params);
+
+		// print_r(self::$m);
+	}
+
+	private function request()
+	{
 		$controller = '\\app\\controllers\\'.ucfirst(Request::getControllerId()).'Controller';
 
 		if(class_exists($controller))
@@ -36,16 +56,13 @@ class YKG extends Component
 
 			$controller->$action();
 		}
-
-		return new \YKG\YKG();
-
 	}
 
 	public static function registerModel()
 	{
 		\ActiveRecord\Config::initialize(function($cfg)
 		{
-		    $cfg->set_model_directory(ROOT.'/application/models');
+		    $cfg->set_model_directory(__APP__.'/models');
 		    $cfg->set_connections(array(
 		    	'development' => 'mysql://root:blueidea@127.0.0.1/ykg',
 		    	// 'production' => 'mysql://root:blueidea@127.0.0.1/ykg'

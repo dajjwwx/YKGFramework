@@ -66,7 +66,7 @@ class YKGLoader
 		$file = "$root/$class_name.php";
 
 		if (file_exists($file))
-			require $file;
+			require_once $file;
 	}
 
 }

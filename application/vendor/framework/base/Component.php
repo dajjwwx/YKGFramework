@@ -7,11 +7,11 @@ namespace YKG\base;
 
 abstract class Component
 {
-	protected $m = [];	//Register
+	public static $m = [];	//Register
 
 	protected function __construct()
 	{
-		$this->m =Config::load();
+		self::$m =Config::load();
 	}
 
 	public function __get($name)
@@ -22,15 +22,19 @@ abstract class Component
 		{
 			return $this->$getter();
 		}
-		elseif(isset($this->m['components'][$name]))
+		elseif(isset(self::$m[$name]))
 		{
-			$class = new $this->m['components'][$name]['class'];
+			return self::$m[$name];
+		}
+		elseif(isset(self::$m['components'][$name]))
+		{
+			$class = new self::$m['components'][$name]['class'];
 
 			return $class;
 		}
 		elseif(property_exists($this, $name))
 		{
-			return $this->name;
+			return $this->$name;
 		}
 		else
 		{
