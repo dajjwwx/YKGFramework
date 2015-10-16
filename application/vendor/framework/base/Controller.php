@@ -61,11 +61,11 @@ class Controller
 
 		if($pos == 0)
 		{
-			$view = ROOT.'/application/views'.$layout.'.php';
+			$view = __APP__.'/views'.$layout.'.php';
 		}
 		elseif($pos ==1)
 		{
-			$view = ROOT.'/application/views'.substr($layout, 1).'.php';
+			$view = __APP__.'/views'.substr($layout, 1).'.php';
 		}
 
 		return $view;
@@ -76,11 +76,11 @@ class Controller
 	{
 		if($module == "")
 		{
-			$path = ROOT.'/application/views/'.$viewPath.'.php';
+			$path = __APP__.'/views/'.$viewPath.'.php';
 		}
 		else
 		{
-			$path = ROOT.'/application/modules/'.$module.'/views/'.$viewPath.'.php';
+			$path = __APP__.'/modules/'.$module.'/views/'.$viewPath.'.php';
 		}
 
 		return $path;

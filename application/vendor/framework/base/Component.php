@@ -2,12 +2,13 @@
 /**
  *在这里我们先定义一些基本的方法
  *1.Use the Request Component we can type this <code>\YKG\YKG::app()->request->getControllerId()</code>
+ *2.
  */
 namespace YKG\base;
 
 abstract class Component
 {
-	public static $m = [];	//Register
+	protected static $m = [];	//Register
 
 	protected function __construct()
 	{
@@ -22,14 +23,17 @@ abstract class Component
 		{
 			return $this->$getter();
 		}
-		elseif(isset(self::$m[$name]))
+		elseif(isset(self::$m[$name]))	//\\YKG\YKG::app()->name;
 		{
 			return self::$m[$name];
 		}
 		elseif(isset(self::$m['components'][$name]))
 		{
 			$class = new self::$m['components'][$name]['class'];
-
+			$params = self::$m['components'][$name];
+			foreach ($params as $key => $value) {
+				$class->$key = $value;
+			}
 			return $class;
 		}
 		elseif(property_exists($this, $name))
@@ -44,7 +48,7 @@ abstract class Component
 
 	public function __set($name, $value)
 	{
-		$this->name = $vlaue;
+		$this->$name = $value;
 	}
 
 	public function __call($func, $arg)

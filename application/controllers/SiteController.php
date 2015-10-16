@@ -31,7 +31,9 @@ class SiteController extends Controller
 	public function actionTest()
 	{
 
-		echo \YKG\YKG::app()->getName();
+		// print_r(\YKG\YKG::app()->test->getId());
+
+
 
 		// $a = array('username'=>'zhangsan','age'=>200);  
 		// $b = array(5,8,9,array(1,2,3,array(7,10)));  
@@ -47,7 +49,10 @@ class SiteController extends Controller
 
 		echo $book->name;
 
-		echo $book->user->name;
+		echo "<br />";
+		echo \YKG\YKG::app()->test->getId();
+
+		// echo $book->user->name;
 
 		// $user = User::find(1);
 
