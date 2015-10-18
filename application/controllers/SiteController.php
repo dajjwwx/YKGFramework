@@ -1,11 +1,10 @@
 <?php
 namespace app\controllers;
-
+use \YKG\YKG;
 use \YKG\base\Controller;
 use \app\models\Book;
 use \app\models\User;
 use \YKG\helpers\Util;
-
 
 class SiteController extends Controller
 {
@@ -14,12 +13,31 @@ class SiteController extends Controller
 	public function  actionIndex()
 	{
 
-
 		$this->render('site/index',[
 			'data'=>'Hello world~~A22222222ctionIndex',
 			'm'=>$_SERVER
 		]);
 	}
+
+	public function actionLogin()
+	{
+		$this->layout = '//layouts/login';
+
+
+
+		$model = User::find(array('name'=>'admin'));
+
+		Util::dump($model);
+
+		if(isset($_POST['Login']))
+		{
+
+		}
+
+		$this->render('login');
+	}
+
+
 
 	public function actionDb()
 	{
@@ -28,8 +46,31 @@ class SiteController extends Controller
 		echo $model->author;
 	}
 
+	public function actionSession()
+	{
+
+		// $_SESSION['name'] = 'value';
+
+		// echo $_SESSION['name'];
+
+		\YKG\YKG::app()->session->add('name','helloworld');
+		\YKG\YKG::app()->session->add('name2','helloworld2');
+
+		Util::dump(YKG::app()->session->session);
+
+
+
+
+
+
+
+		echo \YKG\YKG::app()->session->get('name');
+	}
+
 	public function actionTest()
 	{
+
+		Util::dump($_REQUEST);
 
 		// print_r(\YKG\YKG::app()->test->getId());
 
