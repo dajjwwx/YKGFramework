@@ -2,11 +2,7 @@
 namespace YKG\base;
 class Router
 {
-
-	public $defaultRouter = 'site/index';
-
-	
-	
+	public $defaultRouter = 'site/index';	
 
 	public function getUrl()
 	{

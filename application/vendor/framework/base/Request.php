@@ -91,9 +91,7 @@ class Request extends Component
 		self::$_params['action'] = $a;			
 	}
 
-
-	//设置当前的Module/Controller/Action
-	public static function setRouter()
+	private static function beforeRouter()
 	{
 		$tmp = explode('/', self::$_params['r']);
 
@@ -122,7 +120,7 @@ class Request extends Component
 			}
 			else
 			{
-				throw new \YKG\base\exceptions\NotFoundControllerException($tmp[0], 1);
+				throw new \YKG\base\exceptions\NotFoundControllerException($tmp[0], 2);
 				
 			}
 
@@ -130,6 +128,17 @@ class Request extends Component
 		elseif(sizeof($tmp) == 3)
 		{
 			self::setMCA($tmp[0], $tmp[1], $tmp[2]);
+		}		
+	}
+
+
+	//设置当前的Module/Controller/Action
+	public static function setRouter()
+	{
+		try {
+			self::beforeRouter();
+		} catch (Exception $e) {
+			echo $e->getMessage();
 		}
 
 

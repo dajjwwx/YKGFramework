@@ -1,20 +1,43 @@
 <?php
 namespace app\controllers;
+
 use \YKG\YKG;
 use \YKG\base\Controller;
 use \app\models\Book;
 use \app\models\User;
+use \app\models\form\Login;
 use \YKG\helpers\Util;
 
 class SiteController extends Controller
 {
 	public $layout = '//layouts/main';
 
+	public function accessRules()
+	{
+		return [
+			[
+				'allow',
+				'actions'=>['index', 'login','register'],
+				'users'=>['*']
+			],
+			[
+				'allow', 
+				'actions'=>['admin','logout'],
+				'users'=>['@']
+			]
+		];
+	}
+
 	public function  actionIndex()
 	{
+		// echo YKG::app()->user->getName();
+
+		// // Util::dump(YKG::app()->session->session);
+
+		// echo YKG::app()->user->getId();
 
 		$this->render('site/index',[
-			'data'=>'Hello world~~A22222222ctionIndex',
+			'data'=>'ctionIndex',
 			'm'=>$_SERVER
 		]);
 	}
@@ -24,17 +47,51 @@ class SiteController extends Controller
 		$this->layout = '//layouts/login';
 
 
-
-		$model = User::find(array('name'=>'admin'));
-
-		Util::dump($model);
-
 		if(isset($_POST['Login']))
 		{
+			$model = new Login();
 
+			$model->username = $_POST['Login']['username'];
+			$model->password = $_POST['Login']['password'];
+
+			if($model->validate())
+			{
+				// echo "登录成功";
+				// echo YKG::app()->user->getName();
+
+				// Util::dump(YKG::app()->session->session);
+
+				// echo YKG::app()->user->getId();
+
+				// sleep(5);
+
+				$this->redirect('site/index');
+
+				// header('location:'.YKG::app()->uri->create('site/index'));
+			}
+			else
+			{
+				echo "登录失败";
+			}
 		}
 
 		$this->render('login');
+	}
+
+	public function actionLogout()
+	{
+		YKG::app()->session->delete('__webuser__');
+		header('location:'.YKG::app()->uri->create('site/index'));
+	}
+
+	public function actionRegister()
+	{
+
+		$this->layout = '//layouts/login';
+
+		echo YKG::app()->message->t('common','Login');
+
+		$this->render('register');
 	}
 
 
@@ -57,12 +114,6 @@ class SiteController extends Controller
 		\YKG\YKG::app()->session->add('name2','helloworld2');
 
 		Util::dump(YKG::app()->session->session);
-
-
-
-
-
-
 
 		echo \YKG\YKG::app()->session->get('name');
 	}

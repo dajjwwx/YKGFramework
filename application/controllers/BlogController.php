@@ -1,8 +1,10 @@
 <?php
 namespace app\controllers;
 
+use YKG\YKG;
 use YKG\base\Controller;
 use YKG\helpers\Util;
+use app\models\Post;
 
 class BlogController extends Controller
 {
@@ -15,24 +17,49 @@ class BlogController extends Controller
 		));
 	}
 
+	public function actionView()
+	{
+
+		$model  = Post::find($_GET['id']);
+
+		$this->render('view',[
+			'model'=>$model
+		]);
+	}
+
 	public function actionPublish()
 	{
-		$this->layout = '//layouts/main';
+		$this->layout = '//layouts/editor';
 
-		if(isset($_POST['test-editormd-markdown-doc']))
+		// YKG::app()->user->setId(1);
+
+		// $_POST['Post'] = [
+		// 	'title'=>'标题',
+		// 	'cid'=>2,
+		// 	'tags'=>'测试'
+		// ];
+		// $_POST['editormd-markdown-doc'] = '测试内容';
+
+		if(isset($_POST['editormd-markdown-doc']))
 		{
-			 header("Content-Type:text/html; charset=utf-8");
+			Util::dump($_POST);
+			 // if (isset($_POST['submit'])) {
+				$model = new Post($_POST['Post']);
 
-			 if (isset($_POST['submit'])) {
-			        echo "<pre>";
-			        echo htmlspecialchars($_POST["test-editormd-markdown-doc"]);
-			        echo "<br/><br/>";
-			        echo htmlspecialchars($_POST["test-editormd-html-code"]);
-			        echo "</pre>";
-			 }
+				$model->uid = YKG::app()->user->getId();
+				$model->content = $_POST['editormd-markdown-doc'];
+				$model->publish = time();
+				$model->modify = time();
+				if($model->save())
+				{
+					$this->redirect('blog/view',['id'=>$model->id]);
+				}
+				else
+				{
+					Util::dump($model->errors);
+				}		 	
+			 // }
 		}
-
-		Util::dump($_POST);
 
 		$this->render('publish');
 	}

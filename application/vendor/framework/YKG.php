@@ -26,6 +26,11 @@ class YKG extends Component
 		return new \YKG\YKG();
 	}
 
+	public static function t($file, $message)
+	{
+		return self::app()->message->t($file, $message);
+	}
+
 	public function run($params)
 	{
 		// self::registerModel();	//load ORM Liabaray
@@ -44,7 +49,17 @@ class YKG extends Component
 			$action = 'action'.ucfirst(Request::getActionId());
 			$controller = new $controller;
 
-			$controller->$action();
+			$controller->beforeAction();
+
+			if(method_exists($controller, $action))
+				$controller->$action();
+			else
+				throw new \Exception("Request Page Not Found", 1);
+				
+		}
+		else
+		{
+			throw new \Exception("Request Page Not Found", 1);
 		}
 	}
 

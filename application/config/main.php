@@ -1,6 +1,8 @@
 <?php
 return [
-	'name'=>'YKGFramework',
+	'name'=>'YKG Framework',
+
+	'language'=>'zh_cn',
 
 	'components'=>[
 		'db'=>[

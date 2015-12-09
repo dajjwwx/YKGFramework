@@ -1,6 +1,8 @@
 <?php
 namespace YKG\base;
 
+use \YKG\YKG;
+
 class Controller
 {
 	private $_id;
@@ -10,6 +12,7 @@ class Controller
 	private static $layout_partial_content = [];
 
 	public $layout = '//layouts/base';
+	public $breadcrumbs = [];	//导航条
 
 	private $layouts_list = [];
 
@@ -17,10 +20,59 @@ class Controller
 
 	private $html;
 
+	/***
+	 * accessRules
+	 * [
+	 *	['allow','actions'=>[],'users'=>['*']],
+	 *	['allow','actions'=>[],'users'=>['@']],
+	 *	['allow','actions'=>[],'users'=>['admin']],
+	 *	['deny','actions'=>[],'users'=>'*']	
+	 * ]
+	 */
+	public function accessRules()
+	{
+		return [];
+	}
+
 	public function __construct()
 	{
 		$this->_id = Request::getControllerId();
 		$this->_action_id = Request::getActionId();
+	}
+
+	public function beforeAction()
+	{
+		$accessRules = $this->accessRules();
+
+		$isGuest = YKG::app()->user->isGuest();
+		$name = YKG::app()->user->getName();
+
+		if($accessRules)
+		{
+			foreach ($accessRules as $item) {
+				if($item[0] == 'allow' && in_array($this->_action_id, $item['actions'])&& $item['users'][0] == '*')
+				{
+
+				}
+				elseif($item[0] == 'allow' && in_array($this->_action_id, $item['actions']) && $item['users'][0] == '@')
+				{
+					if($isGuest)
+						throw new \Exception("No permission to access this action", 1);				
+				}
+				elseif($item[0] == 'allow' && in_array($this->_action_id, $item['actions']) && in_array($name, $item['users']))
+				{
+					throw new \Exception("No permission to access this action", 1);
+				}
+				elseif($item[0] == 'deny' && in_array($this->_action_id, $item['actions']) && in_array($name, $item['users']))
+				{
+					throw new \Exception("No permission to access this action", 1);
+				}
+				// else
+				// {
+				// 	throw new \Exception("Error Processing Request", 1);				
+				// }
+			}
+		}
 	}
 	public function run()
 	{
@@ -61,11 +113,11 @@ class Controller
 
 		if($pos == 0)
 		{
-			$view = __APP__.'/views'.$layout.'.php';
+			$view = __APP__.'/views/'.$layout.'.php';
 		}
 		elseif($pos ==1)
 		{
-			$view = __APP__.'/views'.substr($layout, 1).'.php';
+			$view = __APP__.'/views/'.substr($layout, 1).'.php';
 		}
 
 		return $view;
@@ -84,8 +136,6 @@ class Controller
 		}
 
 		return $path;
-
-
 	}
 
 	public function getViewPath($viewPath)
@@ -163,6 +213,32 @@ class Controller
 
 		ob_get_flush();
 		
+	}
+
+	public function renderPartial($viewPath, $params = [])
+	{
+		if(is_array($params))
+		{
+			extract($params);
+		}
+
+		$pos = strpos($viewPath, '/layout');
+
+		if($pos == -1)
+		{
+			$view = $this->getViewPath($viewPath);
+		}
+		else
+		{
+			$view = $this->getLayoutPath($viewPath);	
+		}			
+
+		require($view);
+	}
+
+	public function redirect($router, $params)
+	{
+		header('Location:'.YKG::app()->uri->create($router, $params));
 	}
 }
 ?>

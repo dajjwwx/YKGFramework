@@ -12,6 +12,6 @@ class NotFoundModuleException extends \Exception
 
 	function __toString()
 	{
-		return __CLASS__.":[{$this->code}]:Not Found Module".ucfirst($this->message)";
+		return __CLASS__.":[{$this->code}]:Not Found Module".ucfirst($this->getTraceAsString())";
 	}
 }
