@@ -29,19 +29,21 @@ use YKG\helpers\HHtml;
 </script>
 
 <div class="posts">
-	<div class="post">
-		<h1 class="post-title">
-		 	<?php echo HHtml::link($model->title, ['blog/view','id'=>$model->id]);?>
-		</h1>
-	    	<span class="post-date"><?php echo date('Y-m-d', $model->publish);?></span>	    
+	<article id="<?php echo $model->id;?>" class="post">
+	               <header class="post-head">
+                                            <h1 class="post-title"><?php echo $model->title;?></h1>
+                                            <section>
+                                                <span class="author">作者：<?php print_r($model->user);?></span>
+                                            </section>
+                              </header>    	
 		<div class="tweet-button">
 					 
 		</div>
-                	<div id="editormd-view">
+                	<section id="editormd-view" class="post-content">
                                 	<textarea id="append-test" style="display:none;">
 <?php echo $model->content;?>
                                 	</textarea>
-            	               </div>
-	  </div>
+            	               </section> 
+                </article>
 
 </div>

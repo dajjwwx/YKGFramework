@@ -12,9 +12,6 @@ use YKG\helpers\HHtml;
 
  <script src="/public/js/plugins/editormd/editormd.min.js"></script>
  
- <script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
  <script type="text/javascript">
     $(function() {
        editormd = editormd.markdownToHTML("editormd-view", {
@@ -31,21 +28,21 @@ use YKG\helpers\HHtml;
 
 
 </script>
-
-<div class="posts">
-	<div class="post">
-		 <h1 class="post-title">
-		 	<?php echo HHtml::link($model->title, ['blog/view','id'=>$model->id]);?>
-		</h1>
-	    	<span class="post-date"><?php echo date('Y-m-d', $model->publish);?></span>	    
-		<div class="tweet-button">
-					 
-		</div>
-            	<div id="editormd-view">
-                	<textarea id="append-test" style="display:none;">
-				<?php echo $model->content;?>
-                	</textarea>
-        	</div>
-	  </div>
-
-</div>
+<article id="<?php echo $model->id;?>" class="post">
+               <header class="post-head">
+                                            <h1 class="post-title"><?php echo $model->title;?></h1>
+                                            <section class="post-meta">
+                                                    <span class="author">作者：<?php echo $model->user->name;?></span>                                                    
+                                                    <time class="post-date"><?php echo date('Y-m-d', $model->publish);?></time>
+                                                    <span>分类：<?php echo $model->category->name;?></span>
+                                            </section>
+                              </header>     
+               <div class="tweet-button">
+                     
+               </div>
+                    <section id="editormd-view" class="post-content">
+                                    <textarea id="append-test" style="display:none;">
+<?php echo $model->content;?>
+                                    </textarea>
+                               </section> 
+</article>

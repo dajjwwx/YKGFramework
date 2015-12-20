@@ -39,9 +39,14 @@ class QuickstartController extends Controller
 	public function actionView()
 	{
 
-		$model  = Post::find($_GET['id']);
+		$id = intval($_GET['id']);
 
-		$this->render('view',[
+		$model  = Post::find(['id'=>$id]);
+
+		// if(!$model) throw new Exception("Page not found~~", 1);
+		
+
+		$this->render('blog/view',[
 			'model'=>$model
 		]);
 	}

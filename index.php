@@ -11,7 +11,7 @@ define('__YKG__', __APP__.'/vendor/framework');
 
 // $_SERVER['HTTP_HOST'] = 'www.ykgframework.com';
 // $_SERVER['REQUEST_URI'] = '/index.php?r=docs/index&id=1';
-// $_SERVER['QUERY_STRING'] = 'r=quickstart/index&id=1';
+// $_SERVER['QUERY_STRING'] = 'r=album/test&guid=1450413910817';
 
 $app = dirname(__FILE__).'/application/vendor/framework/YKG.php';
 

@@ -1,0 +1,60 @@
+[Datetime]15-12-18 04:56:46	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [myfile] => Array
+        (
+            [name] => 20151108_113807.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phptJ6WSg
+            [error] => 0
+            [size] => 1434214
+        )
+
+)
+
+[Datetime]15-12-18 04:56:46	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+["20151108_113807.jpg"]
+[Datetime]15-12-18 11:49:34	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+)
+
+[Datetime]15-12-19 12:01:17	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+)
+
+[Datetime]15-12-19 12:01:18	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+)
+
+[Datetime]15-12-19 12:01:18	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+)
+
+[Datetime]15-12-19 09:37:14	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+)
+
+[Datetime]15-12-19 01:47:18	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+)
+
+[Datetime]15-12-19 01:49:30	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [editormd-image-file] => Array
+        (
+            [name] => 428d5ef6c4a0eceec4d8a06de4c7606671af2abe1d0cb-ZcQ0xs_fw580[1].jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpyVkqp0
+            [error] => 0
+            [size] => 75580
+        )
+
+)
+

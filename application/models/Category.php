@@ -5,6 +5,9 @@ use \YKG\helpers\HHtml;
 class Category extends \ActiveRecord\Model 
 { 
 
+	const CATEGORY_TYPE_POST = 10;
+	const CATEGORY_TYPE_MEDIA = 20;
+
 	public $deep;
 
 	const TREE_VIEW_CHECK = 'check';		//带checkbox显示分类
@@ -13,6 +16,9 @@ class Category extends \ActiveRecord\Model
 	// static $belongs_to = [
 	// 	['user']
 	// ];
+	static $has_many = [
+		['posts']
+	];
 
 	public static function getCategoryModels()
 	{

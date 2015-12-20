@@ -1,4 +1,5 @@
 <?php
+use YKG\YKG;
 use YKG\helpers\HHtml;
 use app\models\Category;
 ?>
@@ -63,7 +64,7 @@ use app\models\Category;
                         //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为#fff
                         imageUpload : true,
                         imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-                        imageUploadURL : "./php/upload.php",
+                        imageUploadURL : "<?php echo YKG::app()->uri->create('album/upload');?>",
                         onload : function() {
                             console.log('onload', this);
                             //this.fullscreen();

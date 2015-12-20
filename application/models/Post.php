@@ -9,6 +9,11 @@ class Post extends \ActiveRecord\Model
 	static $has_many = [
 	];
 
+	static $belongs_to = [
+		['user'],
+		['category']
+	];
+
 
 }
 

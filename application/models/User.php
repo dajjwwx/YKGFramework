@@ -8,7 +8,7 @@ class User extends \ActiveRecord\Model
 	
 	static $has_many = [
 		['book'],
-		['post']
+		['posts']
 	];
 
 	private function generateSalt()

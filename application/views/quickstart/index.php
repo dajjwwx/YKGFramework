@@ -37,33 +37,35 @@ $parsedown = new Parsedown();
 
     });
 </script>
-	<article  class="post tag-spark">
+<article id="56" class="post tag-php">
 
-    	<div class="post-head">
-	        <h1 class="post-title"><?php echo HHtml::link($item->title,['quickstart/view','id'=>$item->id]);?></h1>
-	        <div class="post-meta">
-	            	<!--<span class="author">作者：<?php echo $item->uid;?></span> •-->
-	            <time class="post-date" ><?php echo date('Y-m-d',$item->modify);?></time>
-	        </div>
-    	</div>
-    	<?php echo $parsedown->text($item->content);?>
-       	<div id="editormd-view-<?php echo $item->id;?>" class="post-content">
+    <header class="post-head">
+        <h1 class="post-title"><?php echo HHtml::link($item->title,['quickstart/view','id'=>$item->id]);?></h1>
+        <section class="post-meta">
+            <span class="author">作者：<a href="/author/wangsai/"><?php echo $item->user->name;?></a></span> •
+            <time class="post-date"><?php echo date('Y-m-d',$item->modify);?></time>
+        </section>
+    </header>
+
+    <section class="featured-media">
+    </section>
+
+    <section  id="editormd-view-<?php echo $item->id;?>" class="post-content">
                 <textarea id="append-test-<?php echo $item->id;?>" style="display:none;">
 <?php echo $item->content;?>
                 </textarea>
-        </div>
-	<div class="post-permalink">
-	       
-	</div>
+    </section>
 
     <footer class="post-footer clearfix">
         <div class="pull-left tag-list">
             <i class="fa fa-folder-open-o"></i>
-            <a href="/tag/spark/">Spark</a>
+            <a href="/tag/php/">PHP</a>
         </div>
+
         <div class="pull-right share">
-        	<a href="/post/laravel-spark-alpha-released/" class="pull-right">阅读全文</a>
+                <a href="/post/laravel-spark-alpha-released/" class="pull-right">阅读全文</a>
         </div>
     </footer>
 </article>
+
 <?php endforeach;?>
