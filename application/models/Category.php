@@ -7,6 +7,7 @@ class Category extends \ActiveRecord\Model
 
 	const CATEGORY_TYPE_POST = 10;
 	const CATEGORY_TYPE_MEDIA = 20;
+	const CATEGORY_TYPE_ALBUM = 21;
 
 	public $deep;
 
@@ -19,6 +20,30 @@ class Category extends \ActiveRecord\Model
 	static $has_many = [
 		['posts']
 	];
+
+	public static function getCategoryType($type)
+	{
+		switch ($type) {
+			case self::CATEGORY_TYPE_POST:
+				return '文章';
+				break;
+			case  self::CATEGORY_TYPE_MEDIA:
+				return '媒体';
+				break;
+			
+			default:
+				# code...
+				break;
+		}
+	}
+
+	public static function getCategoryTypeList()
+	{
+		return [
+			self::CATEGORY_TYPE_POST => '文章',
+			self::CATEGORY_TYPE_MEDIA => '媒体'
+		];
+	}
 
 	public static function getCategoryModels()
 	{
@@ -56,9 +81,14 @@ class Category extends \ActiveRecord\Model
 		return $tdata;
 	}
 
-	public static function dropDownList()
+	public static function dropDownList($zero=false)
 	{
 		$result = [];
+
+		if($zero)
+		{
+			$result[0]= '无';
+		}
 		
 
 		$data = self::getCategoryModels();

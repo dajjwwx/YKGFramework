@@ -1,5 +1,6 @@
 <?php 
 use \YKG\YKG;
+use \YKG\helpers\HHtml;
 ?>
 <form method="post" action="<?php echo \YKG\YKG::app()->uri->create('category/create');?>">
         <div class="form-group">
@@ -7,13 +8,16 @@ use \YKG\YKG;
                 <input type="text" id="Category_name" class="form-control" name="Category[name]" />
         </div>
         <div class="form-group">
-                <label for="Category_pid">请选择分类</label>
-                <select id="Category_pid" name="Category[pid]" class="form-control">
-                        <option value="0">无</option>
-                        <?php foreach(\app\models\Category::getCategoryModels() as $item):?>
-                        <option value="<?php echo $item->id;?>"><?php echo $item->name;?></option>
+                <label for="Category_catetype">请选择类型</label>
+                <select id="Category_category" name="Category[catetype]" class="form-control">
+                        <?php foreach(\app\models\Category::getCategoryTypeList() as $key=>$item):?>
+                        <option value="<?php echo $key;?>"><?php echo $item;?></option>
                         <?php endforeach;?>
                 </select>
+        </div>
+        <div class="form-group">
+                <label for="Category_pid">请选择分类</label>
+                <?php echo HHtml::dropDownList('Category[pid]',\app\models\Category::dropDownList(true),['id'=>'Category_pid','class'=>'form-control','data-native-menu'=>'false']);?>
         </div>
         <div class="form-group">
                 <label for="Category_weight">权重</label>

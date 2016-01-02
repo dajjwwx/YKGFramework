@@ -12,12 +12,13 @@ use YKG\YKG;
     	<!-- Bootstrap CSS -->
     	<link rel="stylesheet" href="/public/css/bootstrap.css" />
     	<link rel="stylesheet" href="/public/css/style.css" />
-        <link rel="stylesheet" href="/public/css/post.css" />
+       <link rel="stylesheet" href="/public/css/post.css" />
+       <link rel="stylesheet" href="/public/js/plugins/editormd/css/editormd.css" />
 
-          <link rel="stylesheet" href="/public/js/plugins/editormd/css/editormd.css" />
     	 <!-- jQuery first, then Bootstrap JS. -->
     	<script src="/public/js/jquery.min.js"></script>
     	<script src="/public/js/bootstrap.min.js"></script>
+
         
   </head>
   <body>
@@ -38,6 +39,8 @@ use YKG\YKG;
           <ul class="nav navbar-nav">
             <li><a href="<?php echo YKG::app()->uri->create('docs/index');?>">Document</a></li>
             <li><a href="<?php echo YKG::app()->uri->create('quickstart/index');?>">Quick Start</a></li>
+            <li><a href="<?php echo YKG::app()->uri->create('album/index');?>">Album</a></li>
+
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <?php if(YKG::app()->user->isGuest()):?>
@@ -53,6 +56,7 @@ use YKG\YKG;
                 <li><a href="<?php echo YKG::app()->uri->create('site/logout');?>" ><?php echo YKG::t('common','Logout');?></a></li>
                 <li><a href="<?php echo YKG::app()->uri->create('blog/publish'); ?>">Publish Documents</a></li>
                 <li><a href="<?php echo YKG::app()->uri->create('category/create');?>">Create Category</a></li>
+                <li><a href="<?php echo YKG::app()->uri->create('album/upload');?>">Albums</a></li>
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>

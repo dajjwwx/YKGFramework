@@ -13,6 +13,7 @@ class HUploader
     private $fullName;             //完整文件名,即从当前配置目录开始的URL
     private $fileSize;             //文件大小
     private $fileType;             //文件类型
+    private $mineType;          //mineType
     private $stateInfo;            //上传状态信息,
     private $stateMap = array(    //上传状态映射表，国际化用户需考虑此处数据的国际化
         "SUCCESS" ,                //上传成功标记，在UEditor中内不可改变，否则flash判断会出错
@@ -75,6 +76,7 @@ class HUploader
 
         $this->oriName = $file[ 'name' ];
         $this->fileSize = $file[ 'size' ];
+        $this->mineType = $file['type'];
         $this->fileType = $this->getFileExt();
 
         if ( !$this->checkSize() ) {
@@ -124,7 +126,8 @@ class HUploader
             "url" => $this->fullName ,
             "size" => $this->fileSize ,
             "type" => $this->fileType ,
-            "state" => $this->stateInfo
+            "state" => $this->stateInfo,
+            "mine"=>$this->mineType
         );
     }
 
@@ -145,6 +148,11 @@ class HUploader
     private function getName()
     {
         return $this->fileName = time() . rand( 1 , 10000 ) . $this->getFileExt();
+    }
+
+    public function getFullName()
+    {
+        return substr($this->fullName, 1);
     }
 
     /**

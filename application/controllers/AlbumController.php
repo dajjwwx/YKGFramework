@@ -5,16 +5,64 @@ use YKG\YKG;
 use YKG\base\Controller;
 use YKG\helpers\Util;
 use app\models\Post;
+use app\models\File;
+use app\models\Album;
+use app\models\Category;
 use YKG\helpers\HUploader;
 
 class AlbumController extends Controller
 {
 
-	public $layout = '//layouts/blog';
+	public $layout = '//layouts/album';
 
 	public function actionIndex()
 	{
 
+		$data = Album::find('all');
+
+		$this->render('index',[
+			'data'=>$data
+		]);
+	}
+
+	public function actionView()
+	{
+		$this->render('view');
+	}
+
+	public function actionImpress()
+	{
+		$this->layout = '//layouts/test';
+
+
+
+		$this->render('impress');		
+	}
+
+	public function actionCreate()
+	{
+
+		// $_POST['Album'] = [
+		// 	'description'=>'description',
+		// 	'name'=>'Album',
+		// 	'category_id'=>1,
+		// 	'user_id'=>1
+		// ];
+
+		if(isset($_POST['Album']['name']))
+		{
+			$model = new Album($_POST['Album']);
+			$model->user_id = YKG::app()->user->getId();
+
+			if($model->save())
+			{
+				Util::dump($model);
+				sleep(5);
+				$this->redirect('album/upload',['id'=>$model->id]);
+			}
+		}
+
+		$this->render('create');
 	}
 
 
@@ -55,41 +103,107 @@ class AlbumController extends Controller
 		//   }	
 	}
 
+	public function actionTT()
+	{
+		$tt = [
+			'category_id' => 2,
+		    'status' => 0,
+		    'allow_comment' => 1,
+		    'hits' => 0,
+		    'islocal' => 1,
+		    'server' => 'local',
+		    'oriname'=>'4512324224184.jpg',
+		    'name' => '14512324224184.jpg',
+		    'filetype' => 21,
+		    'user_id' => 1,
+		    'publish' => 1451232422,
+		    'size' => 2361864,
+		    'extension' => '.jpg',
+		    'mine' =>'image/jpeg',
+		];
+
+				 		$model = new File($tt);	 		
+
+		 		if($model->save())
+		 		{
+		 			// $this->redirect('album/view',['id'=>$model->id]);
+		 		}
+		 		else
+		 		{
+		 			Util::writeToFile($model->errors);
+		 		}
+	}
+
 	public function actionUpload()
 	{
 		$output_dir = "./public/uploads/";
 
-		Util::writeToFile($_FILES, 'a+');
-
-		if(isset($_FILES["myfile"]))
+		if(isset($_FILES["album"]))
 		{
 			$ret = array();
 
-			$error =$_FILES["myfile"]["error"];
+			$error =$_FILES["album"]["error"];
 			//You need to handle  both cases
 			//If Any browser does not support serializing of multiple files using FormData() 
-			if(!is_array($_FILES["myfile"]["name"])) //single file
+			if(!is_array($_FILES["album"]["name"])) //single file
 			{
-		 	 	$fileName = $_FILES["myfile"]["name"];
-		 		move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir.$fileName);
-		    		$ret[]= $fileName;
+		 	 // 	$fileName = $_FILES["album"]["name"];
+		 		// if(move_uploaded_file($_FILES["album"]["tmp_name"],$output_dir.$fileName))
+		 		// {
+
+		 		// }
+		 		$uploader = new HUploader('album',['allowFiles'=>['.jpg','.png','.gif'],'maxSize'=>100000,'savePath'=>'./public/uploads/']);
+
+		 		$info = $uploader->getFileInfo();
+		 		// Util::dump($info);
+
+		 		$attributes = [
+		 			'album_id'=>intval($_GET['id']),
+		 			'status'=>0,
+		 			'allow_comment'=>true,
+		 			'hits'=>0,
+		 			'oriname'=>$info['originalName'],
+		 			'islocal'=>true,
+		 			'server'=>'local',
+		 			'name'=>$info['name'],
+		 			'filetype'=>Category::CATEGORY_TYPE_ALBUM,
+		 			'user_id'=>YKG::app()->user->getId(),
+		 			'publish'=>time(),
+		 			'size'=>$info['size'],
+		 			'extension'=>$info['type'],
+		 			'mine'=>$info['mine'],
+		 		];
+		 		Util::writeToFile($attributes,'a+');	
+
+		 		$model = new File($attributes);	 		
+
+		 		if($model->save())
+		 		{
+		 			// $this->redirect('album/view',['id'=>$model->id]);
+		 		}
+		 		else
+		 		{
+		 			Util::writeToFile($model->errors);
+		 		}
+
+
+		    		$ret[]= $info['name'];
 			}
 			else  //Multiple files, file[]
 			{
-			  $fileCount = count($_FILES["myfile"]["name"]);
-			  for($i=0; $i < $fileCount; $i++)
-			  {
-			  	$fileName = $_FILES["myfile"]["name"][$i];
-				move_uploaded_file($_FILES["myfile"]["tmp_name"][$i],$output_dir.$fileName);
-			  	$ret[]= $fileName;
-			  }
+			  	$fileCount = count($_FILES["album"]["name"]);
+			  	for($i=0; $i < $fileCount; $i++)
+			  	{
+			  		$fileName = $_FILES["album"]["name"][$i];
+					move_uploaded_file($_FILES["album"]["tmp_name"][$i],$output_dir.$fileName);
+			  		$ret[]= $fileName;
+			  	}
 			
 			}
-		    Util::writeToFile(json_encode($ret),'a+');
 		 }
 
 
-		// $uploader = new HUploader('editormd-image-file',['allowFiles'=>['.jpg','.png','.gif'],'maxSize'=>10,'savePath'=>'/public/uploads/']);
+		$uploader = new HUploader('album',['allowFiles'=>['.jpg','.png','.gif'],'maxSize'=>100000,'savePath'=>'./public/uploads/']);
 
 
 

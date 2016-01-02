@@ -2,6 +2,7 @@
 use \YKG\helpers\Util;
 use \YKG\helpers\HHtml;
 use \app\models\Category;
+use \app\models\Post;
 use YKG\helpers\Parsedown;
 
 
@@ -59,7 +60,7 @@ $parsedown = new Parsedown();
     <footer class="post-footer clearfix">
         <div class="pull-left tag-list">
             <i class="fa fa-folder-open-o"></i>
-            <a href="/tag/php/">PHP</a>
+            <?php echo Post::getTagsLink($item->tags);?>
         </div>
 
         <div class="pull-right share">

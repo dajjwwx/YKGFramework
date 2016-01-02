@@ -1495,7 +1495,7 @@ class Model
 	 * YourModel::find(array('name' => 'Tito', 'id' => 1));
 	 * YourModel::find('first',array('name' => 'Tito', 'id' => 1));
 	 * YourModel::find('all',array('name' => 'Tito', 'id' => 1));
-	 * </code>
+	 * </code>array('name' => 'Tito', 'id' => 1)
 	 *
 	 * An options array can take the following parameters:
 	 *

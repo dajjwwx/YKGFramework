@@ -12,7 +12,7 @@ use app\models\Category;
 		</div>
 		<div class="col-md-6">
 		        <div class="form-group">
-		        	<?php echo HHtml::dropDownList('Post[cid]',Category::dropDownList(),['id'=>'Post_cid','class'=>'form-control','data-native-menu'=>'false']);?>
+		        	<?php echo HHtml::dropDownList('Post[category_id]',Category::dropDownList(),['id'=>'Post_category_id','class'=>'form-control','data-native-menu'=>'false']);?>
 		        </div>
 		</div>
 	</div>
@@ -64,7 +64,7 @@ use app\models\Category;
                         //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为#fff
                         imageUpload : true,
                         imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-                        imageUploadURL : "<?php echo YKG::app()->uri->create('album/upload');?>",
+                        imageUploadURL : "<?php echo YKG::app()->uri->create('blog/upload');?>",
                         onload : function() {
                             console.log('onload', this);
                             //this.fullscreen();

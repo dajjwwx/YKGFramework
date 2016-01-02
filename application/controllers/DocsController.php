@@ -14,8 +14,8 @@ class DocsController extends Controller
 
 		// $models = Post::find('all');
 		$model = new Post();
-		$model->uid = 1;//YKG::app()->user->getId();
-		$model->cid = 1;
+		$model->user_id = 1;//YKG::app()->user->getId();
+		$model->category_id = 1;
 		$model->title = "Hello world";
 
 		$model->content = "#I've a dream to sing a song";

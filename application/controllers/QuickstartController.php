@@ -5,6 +5,7 @@ use YKG\base\Controller;
 use YKG\helpers\Util;
 use app\models\Category;
 use app\models\Post;
+use YKG\helpers\HHtml;
 
 class QuickstartController extends Controller
 {
@@ -29,6 +30,7 @@ class QuickstartController extends Controller
 	
 	public function actionIndex()
 	{
+
 		$dataProvider  = Post::find('all',['order'=>'id desc']);
 
 		$this->render('index',[

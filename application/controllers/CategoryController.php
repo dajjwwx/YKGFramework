@@ -18,8 +18,8 @@ class CategoryController extends Controller
 		{
 
 			$model = new Category($_POST['Category']);
-			$model->user_id = YKG::app()->user->id;
-			$model->catetype = Category::CATEGORY_TYPE_POST;
+			$model->user_id = YKG::app()->user->getId;
+			// $model->catetype = Category::CATEGORY_TYPE_POST;
 
 			if($model->save())
 			{

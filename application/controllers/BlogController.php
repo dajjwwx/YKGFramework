@@ -4,7 +4,9 @@ namespace app\controllers;
 use YKG\YKG;
 use YKG\base\Controller;
 use YKG\helpers\Util;
+use YKG\helpers\HUploader;
 use app\models\Post;
+
 
 class BlogController extends Controller
 {
@@ -28,6 +30,30 @@ class BlogController extends Controller
 		]);
 	}
 
+	public function actionUpload()
+	{
+
+		Util::writeToFile($_FILES);
+		
+
+		if(isset($_FILES["editormd-image-file"]))
+		{		
+			$uploader = new HUploader('editormd-image-file',[
+				'allowFiles'=>['.jpg','.png','.gif'],
+				'maxSize'=>10*1024,
+				'savePath'=>'./public/uploads/'
+			]);
+			Util::writeToFile($uploader);
+			echo json_encode([
+				'success'=>1,
+				'message'=>'上传成功～',
+				'url'=>$uploader->getFullName()
+			]);
+		}
+
+
+	}
+
 	public function actionPublish()
 	{
 		$this->layout = '//layouts/editor';
@@ -43,11 +69,11 @@ class BlogController extends Controller
 
 		if(isset($_POST['editormd-markdown-doc']))
 		{
-			Util::dump($_POST);
+			// Util::dump($_POST);
 			 // if (isset($_POST['submit'])) {
 				$model = new Post($_POST['Post']);
 
-				$model->uid = YKG::app()->user->getId();
+				$model->user_id = YKG::app()->user->getId();
 				$model->content = $_POST['editormd-markdown-doc'];
 				$model->publish = time();
 				$model->modify = time();

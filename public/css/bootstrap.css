@@ -6554,6 +6554,14 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
+
+.clearfix{
+  clear:both;
+  border:0;
+}
+.line{
+  border:1px solid grey;
+}
 .center-block {
   display: block;
   margin-right: auto;
