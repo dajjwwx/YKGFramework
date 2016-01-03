@@ -2017,3 +2017,1504 @@ Array
     [mine] => image/jpeg
 )
 
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 0.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893674848.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 807368
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 3.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893677306.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 203195
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 5.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893675716.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 254176
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 1.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893673751.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 748011
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 4.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893671394.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 813486
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 2.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893679329.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 981165
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 6.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893678294.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 783407
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 7.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893677178.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 871155
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 8.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893678047.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 894341
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 11.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893678109.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 769245
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 9.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893673035.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 883274
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 10.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451789367563.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 969354
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 12.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893679360.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 1010068
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:27	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 13.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893678849.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789367
+    [size] => 875913
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:28	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 14.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893685393.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789368
+    [size] => 1058571
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:28	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 17.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893688212.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789368
+    [size] => 1100501
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:28	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 15.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893687968.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789368
+    [size] => 1166121
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:28	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 16.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893687650.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789368
+    [size] => 1252950
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:28	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 18.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517893687361.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789368
+    [size] => 1222693
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 10:49:28	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 1
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => 19.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451789368688.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451789368
+    [size] => 1212557
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:58	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0016.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974381859.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797438
+    [size] => 945429
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:58	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0017.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974383365.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797438
+    [size] => 1066469
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:58	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0018.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974383579.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797438
+    [size] => 920164
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0019.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974394960.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 694182
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0023.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974394739.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 756694
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0025.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974394483.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 271967
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0020.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451797439980.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 1071993
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0022.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 145179743983.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 1029180
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0021.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974396016.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 1040192
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0024.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974396092.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 660552
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0026.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974393760.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 852631
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0027.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974397016.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 700955
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0030.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974393169.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 741246
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0031.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974391051.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 671725
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0029.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974394860.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 673514
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0028.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974397897.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 742493
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0033.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974391756.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 659532
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0032.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974391473.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 721367
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0037.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451797439756.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 672479
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0035.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974398736.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 823664
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0036.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974391659.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 882954
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0034.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974397574.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 1187200
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0042.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974397876.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 454509
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0040.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974395661.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 716716
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0038.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974398931.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 828711
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0043.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974394244.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 785520
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0046.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974394062.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 587244
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0045.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451797439117.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 786792
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0044.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451797439340.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 820214
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0047.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974399109.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 878880
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0049.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974393289.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 734807
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0048.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974393857.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 841569
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0050.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974395694.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 761039
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:03:59	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0051.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974395364.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797439
+    [size] => 787514
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:14	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0031.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974547407.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797454
+    [size] => 671725
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:14	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0032.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974547742.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797454
+    [size] => 721367
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:14	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0033.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974546759.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797454
+    [size] => 659532
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:14	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0034.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974549502.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797454
+    [size] => 1187200
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:14	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0035.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974542221.jpg
+    [filetype] => 21
+    [user_id] => 
+    [publish] => 1451797454
+    [size] => 823664
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0001.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974762641.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 983105
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0002.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974769778.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 692864
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0003.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974765011.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 689130
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0004.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974765996.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 800220
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0005.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974769251.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 821517
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0006.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974763.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 803522
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0007.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451797476771.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 970622
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0008.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974765027.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 920725
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0012.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974767107.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 661044
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0011.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974762555.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 816946
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0009.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451797476376.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 898420
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0010.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974764970.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 1069455
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0013.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974763525.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 705202
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0014.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974762293.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 666435
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0015.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974761722.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 740998
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0017.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974765662.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 1066469
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0018.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974765728.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 920164
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0016.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 1451797476452.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 945429
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0019.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974769965.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 694182
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+
+[Datetime]16-01-03 01:04:36	[File]/home/wwwroot/www.ykgframework.com/application/vendor/framework/helpers/Util.php(20)
+Array
+(
+    [album_id] => 2
+    [status] => 0
+    [allow_comment] => 1
+    [hits] => 0
+    [oriname] => IMAG0020.jpg
+    [islocal] => 1
+    [server] => local
+    [name] => 14517974765229.jpg
+    [filetype] => 21
+    [user_id] => 1
+    [publish] => 1451797476
+    [size] => 1071993
+    [extension] => .jpg
+    [mine] => image/jpeg
+)
+

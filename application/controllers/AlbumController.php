@@ -27,7 +27,17 @@ class AlbumController extends Controller
 
 	public function actionView()
 	{
-		$this->render('view');
+
+		$models = File::find('all',[
+			'conditions'=>[
+				'album_id'=>$_GET['id']
+			],
+			'order'=>'id DESC'
+		]);
+
+		$this->render('view', [
+			'models'=>$models
+		]);
 	}
 
 	public function actionImpress()
@@ -136,6 +146,7 @@ class AlbumController extends Controller
 
 	public function actionUpload()
 	{
+		$this->layout = '//layouts/album';
 		$output_dir = "./public/uploads/";
 
 		if(isset($_FILES["album"]))

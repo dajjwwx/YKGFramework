@@ -19,10 +19,10 @@
 		<hr class="clearfix" />
 	</article>
 	<?php foreach ($data as $model):?>
-	<article id="56" class="post">
-		<section id="109" class="post-content col-md-5">
+	<article  class="post col-md-6">
+		<section id="109" class="post-content">
 			<div style="boder:2px solid red">
-				<div style="border:10px solid #EFEFEF;background-color:white;">
+				<div style="border:10px solid #EFEFEF;background-color:white;height:400px;overflow:hidden;">
 					 <?php  $folder = File::find([
 					 	'conditions'=>[
 							'album_id'=>$model->id
@@ -40,34 +40,15 @@
 				</div>
 			</div>
 		</section>
-		<section class="col-md-7">
-			<ul  style="list-style:none;">			
-			<?php
-				$models = File::find('all',[
-					'conditions'=>[
-						'album_id'=>$model->id
-					],
-					'limit'=>4,
-					'order'=>'id DESC'
-				]);
-
-			?>
-				<?php foreach ($models as $item):?> 
-				<li class="col-md-6 bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline" style="margin:10px 0;height:100px;overflow:hidden;">
-					<?php echo HHtml::img('/public/uploads/'.date('Y/m/d',$item->publish).'/'.$item->name,['width'=>'100%','border'=>'5px solid white','margin'=>'3px','padding'=>'10px']);?>
-				</li>
-				<?php endforeach;?>
-			</ul>
-		</section>
 		<footer class="post-footer clearfix">
 			<div class="pull-left tag-list">
-				<span class="glyphicon glyphicon-cloud-upload"></span>
-				<?php echo HHtml::link('添加相片',['album/upload','id'=>$model->id]);?>
-		            	<i class="glyphicon glyphicon-tags"></i>
+				<i class="glyphicon glyphicon-tags"></i>
 		            	<a href="/?r=blog/tag&amp;name=Dream">Dream</a>
 		       </div>
 			<div class="pull-right share">
-			       <a href="/post/laravel-spark-alpha-released/" class="pull-right">阅读全文</a>
+
+				<span class="glyphicon glyphicon-cloud-upload"></span>
+				<?php echo HHtml::link('添加相片',['album/upload','id'=>$model->id]);?>
 			</div>
 		</footer>
 	</article>

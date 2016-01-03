@@ -1,18 +1,35 @@
-<?php
-use app\models\File;
-use YKG\helpers\HHtml;
-?>
-<link rel="stylesheet" type="text/css" href="/public/js/plugins/wookmark/css/main.css" />
-<ul class="tiles-wrap animated">
-<?php foreach($models as $item):?>
-	<li>
-	<a href="#">
- 		<?php echo HHtml::img('/public/uploads/'.date('Y/m/d',$item->publish).'/'.$item->name,['width'=>'80%','style'=>"border:5px solid #E8E8E8;margin:3px;"]);?> 
-	</a>
-	</li>
- <?php endforeach;?>
-</ul>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+  <title>Wookmark Simple Example</title>
+  <meta name="description" content="An very basic example of how to use the Wookmark jQuery plug-in.">
+  <meta name="author" content="Christoph Ono, Sebastian Helzle">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
+
+  <!-- Global CSS for the page and tiles -->
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+  <div>
+    <header>
+      <h1>Wookmark Simple Example</h1>
+      <p>Resize the browser window or click a grid item to trigger layout updates.</p>
+      <p>
+        The example contains two grids to show that they both work on their own but are instantiated with a single call.
+      </p>
+      <p><a href="../index.html">Back to overview</a></p>
+    </header>
+    <div role="main">
 
       <ul class="tiles-wrap animated">
         <!-- These are our grid blocks -->
@@ -54,9 +71,16 @@ use YKG\helpers\HHtml;
         <!-- End of grid blocks -->
       </ul>
 
- <script type="text/javascript" src="/public/js/plugins/wookmark/wookmark.js"></script>
+    </div>
+  </div>
 
- <!-- Once the page is loaded, initalize the plug-in. -->
+  <!-- include jQuery -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- Include the plug-in -->
+  <script src="../wookmark.js"></script>
+
+  <!-- Once the page is loaded, initalize the plug-in. -->
   <script type="text/javascript">
     (function ($) {
       var wookmark = $('.tiles-wrap').wookmark({
@@ -78,3 +102,6 @@ use YKG\helpers\HHtml;
       });
     })(jQuery);
   </script>
+
+</body>
+</html>
